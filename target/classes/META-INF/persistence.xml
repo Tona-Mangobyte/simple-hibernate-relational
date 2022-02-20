@@ -5,6 +5,8 @@
              version="2.2">
     <persistence-unit name="default">
         <class>org.mb.model.Book</class>
+        <class>org.mb.model.Order</class>
+        <class>org.mb.model.OrderDetail</class>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
             <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/hibernate_relational"/>
@@ -14,14 +16,6 @@
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
         </properties>
-        <!--<properties>
-            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
-            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-            &lt;!&ndash;<&#45;&#45; also tried com.mysql.cj.jdbc.Driver (made no difference) &ndash;&gt;&ndash;&gt;
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/hibernate_test"/>
-            <property name="javax.persistence.jdbc.username" value="root"/>
-            <property name="javax.persistence.jdbc.password" value="12345"/>
-        </properties>-->
 
     </persistence-unit>
 </persistence>

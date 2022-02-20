@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "book")
+@Table(name = "books")
 public class Book implements java.io.Serializable {
     private static final long serialVersionUID = 1L;
 
@@ -14,7 +14,7 @@ public class Book implements java.io.Serializable {
     private float price;
 
     @Id
-    @Column(name = "book_id")
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public long getId() {
         return id;
